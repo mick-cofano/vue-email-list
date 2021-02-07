@@ -2,10 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <title>Random e-mail list</title>
   </head>
   <body>
 
+    <!-- div con aggancio all'app di VueJs -->
+    <div id="app">
+      <!-- lista ordinata delle 10 mail random -->
+      <ol>
+        <!-- v-for che genera le mails -->
+        <li v-for="email in eMails"> {{ email }} </li>
+      </ol>
+    </div>
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>
